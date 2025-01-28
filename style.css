@@ -100,3 +100,46 @@ footer {
     color: white;
     font-size: 14px;
 }
+/* Blog Card Container */
+.blog-card {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align content to the left */
+}
+
+/* Blog Title */
+.blog-card h2 {
+    font-size: 1.8em;
+    color: #444; /* Orange color */
+    margin-bottom: 10px;
+}
+
+/* Blog Meta Info */
+.blog-card p {
+    font-size: 1.1em;
+    color: #555; /* Medium gray text */
+    margin: 10px 0;
+}
+
+/* Read More Link */
+.blog-card .read-more {
+    display: inline-block; /* Makes the link behave like a button */
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners for button look */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effects */
+}
+
+.blog-card .read-more:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
