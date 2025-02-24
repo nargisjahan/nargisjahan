@@ -1,145 +1,157 @@
-/* General Styles */
+/* ===== General Styles ===== */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center body elements */
 }
 
-/* Navigation Bar */
+/* ===== Header/Navbar ===== */
 nav {
     background-color: #333;
-    color: white;
-    padding: 10px 0;
+    padding: 15px;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #f0f0f0;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #007BFF;
 }
 
-/* Page Heading */
-h1 {
-    text-align: center;
-    margin: 20px 0;
-    color: #444;
+/* ===== Main Content ===== */
+h1, h2, h3 {
+    color: #222;
+    text-align: center; /* Center header */
 }
 
-/* Introduction Paragraph */
 p {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
-}
-
-/* Case Study Container */
-.case-study {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Align all content to the left */
-}
-
-/* Heading */
-.case-study h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #444;
-}
-
-/* Paragraphs */
-.case-study p {
-    font-size: 1.1em;
     color: #555;
-    margin: 10px 0;
 }
 
-/* Bold Text in Paragraphs (e.g., "Overview:") */
-.case-study p strong {
-    font-weight: bold;
-    color: #333; /* Darker color for emphasis */
-}
-
-/* Link Button */
-.case-study a {
-    display: inline-block; /* Make the link look like a button */
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #007BFF; /* Blue background */
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.case-study a:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight zoom effect */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    font-size: 14px;
-}
-/* Blog Card Container */
-.blog-card {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
+/* ===== Case Study Card ===== */
+.case-study-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: left; /* Align content to the left */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    gap: 20px;
+    text-align: left; /* Ensure overall left alignment */
 }
 
-/* Blog Title */
-.blog-card h2 {
-    font-size: 1.8em;
-    color: #444; /* Orange color */
-    margin-bottom: 10px;
+/* ===== Thumbnail ===== */
+.case-thumbnail-container {
+    flex: 1;
+    max-width: 20%;
+    padding: 10px;
 }
 
-/* Blog Meta Info */
-.blog-card p {
-    font-size: 1.1em;
-    color: #555; /* Medium gray text */
-    margin: 10px 0;
+.case-thumbnail-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
 }
 
-/* Read More Link */
-.blog-card .read-more {
-    display: inline-block; /* Makes the link behave like a button */
-    margin-top: 15px;
-    padding: 10px 15px;
-    background-color: #007BFF; /* Blue background */
+/* ===== Case Study Details ===== */
+.case-details {
+    flex: 2;
+    max-width: 60%;
+    text-align: left; /* Left-align title, description, and tags */
+}
+
+.case-details h2 {
+    color: #222;
+    margin: 0 0 10px;
+    text-align: left; /* Ensure left alignment */
+}
+
+.case-details p {
+    color: #555;
+    margin: 0 0 10px;
+    text-align: left; /* Ensure left alignment */
+}
+
+/* ===== Tags ===== */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    text-align: left; /* Ensure left alignment */
+}
+
+.tag {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* ===== View Button ===== */
+.case-button-container {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-case-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007BFF;
     color: white;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 8px; /* Rounded corners for button look */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effects */
+    border-radius: 8px;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.9em;
 }
 
-.blog-card .read-more:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+.view-case-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+    .case-study-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .case-thumbnail-container,
+    .case-details,
+    .case-button-container {
+        max-width: 100%;
+    }
+
+    .view-case-btn {
+        width: 80%;
+        margin-top: 15px;
+        white-space: normal; /* Allow wrapping on mobile if needed */
+    }
+
+    .case-details h2,
+    .case-details p,
+    .tags {
+        text-align: center; /* Center-align on mobile */
+    }
 }
