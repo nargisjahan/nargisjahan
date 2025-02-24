@@ -2,6 +2,77 @@
 <html>
 <head>
     <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        p, li {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "• ";
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -11,14 +82,19 @@
         <a href="poetry.html">Poetry</a>
     </nav>
 
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Nargis Jahan, a passionate individual exploring creativity and innovation. Here, you'll find:</p>
-    <ul>
-        <li><strong>Case Studies:</strong> In-depth looks at projects I've worked on.</li>
-        <li><strong>Blog:</strong> My thoughts, experiences, and insights.</li>
-        <li><strong>Poetry:</strong> A collection of my poetic expressions.</li>
-    </ul>
-    <p>Feel free to explore and connect with me!</p>
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Nargis Jahan, a passionate individual exploring creativity and innovation. Here, you'll find:</p>
+        <ul>
+            <li><strong>Case Studies:</strong> In-depth looks at projects I've worked on.</li>
+            <li><strong>Blog:</strong> My thoughts, experiences, and insights.</li>
+            <li><strong>Poetry:</strong> A collection of my poetic expressions.</li>
+        </ul>
+        <p>Feel free to explore and connect with me!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nargis Jahan. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
