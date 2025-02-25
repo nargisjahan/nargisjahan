@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Limit description to 3 lines */
+        .blog-description {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -15,20 +25,98 @@
     </nav>
 
     <h1>Blog</h1>
-    <!-- <p>Welcome to my blog! Explore my thoughts and insights:</p> -->
 
     <!-- Blog Card 1 -->
-    <div class="blog-card">
-        <h2>What is wrong with Uber and Ola in 2022?</h2>
-        <p><strong>Published on:</strong> 26 Sep 2022</p>
-        <p>Uber and Ola revolutionized urban mobility, but post-pandemic, something has shifted fundamentally. Long waiting times, cancellations, and sky-high fares have left customers frustrated...</p>
-        <a href="blog-1-uberola.html" class="read-more">Read Full Article</a>
+<div class="case-study-flex">
+    <!-- Left: Thumbnail Image -->
+    <div class="case-thumbnail-container">
+        <img src="assets/uberola_tn.png" alt="Uber and Ola 2022" class="case-thumbnail">
     </div>
 
-   
+    <!-- Center: Title and Description -->
+    <div class="case-details">
+        <h2>What is Wrong with Uber and Ola in 2022?</h2>
+        <p class="blog-description">
+            The year is 2009. It’s a snowy evening in Paris and two gentlemen, one of them a dropout from UCLA, so classic, are stuck without a cab in sight. And they begin to wonder—what if you could get a cab by a simple tap on your phone?
+    </div>
+
+    <!-- Right: Read Full Article Button -->
+    <div class="case-button-container">
+        <a href="blog-1-uberola.html" target="_blank" class="view-case-btn">Read Full Article</a>
+    </div>
+</div>
+
+
+    <!-- Placeholder Blog Card 2 -->
+    <div class="case-study-flex">
+        <div class="case-thumbnail-container">
+            <img src="assets/placeholder.png" alt="Blog Placeholder" class="case-thumbnail">
+        </div>
+
+        <div class="case-details">
+            <h2>Blog Post Title Placeholder 2</h2>
+            <p class="blog-description">A brief description of what this blog post will cover. Stay tuned for insights and deep dives on this topic...</p>
+        </div>
+
+        <div class="case-button-container">
+            <a href="#" class="view-case-btn">Coming Soon</a>
+        </div>
+    </div>
+
+    <!-- Placeholder Blog Card 3 -->
+    <div class="case-study-flex">
+        <div class="case-thumbnail-container">
+            <img src="assets/placeholder.png" alt="Blog Placeholder" class="case-thumbnail">
+        </div>
+
+        <div class="case-details">
+            <h2>Blog Post Title Placeholder 3</h2>
+            <p class="blog-description">Another engaging blog post placeholder with a short description that hints at exciting upcoming content...</p>
+        </div>
+
+        <div class="case-button-container">
+            <a href="#" class="view-case-btn">Coming Soon</a>
+        </div>
+    </div>
+
+    <!-- Placeholder Blog Card 4 -->
+    <div class="case-study-flex">
+        <div class="case-thumbnail-container">
+            <img src="assets/placeholder.png" alt="Blog Placeholder" class="case-thumbnail">
+        </div>
+
+        <div class="case-details">
+            <h2>Blog Post Title Placeholder 4</h2>
+            <p class="blog-description">Insights and thoughts will be shared here soon. Stay connected for more updates and articles.</p>
+        </div>
+
+        <div class="case-button-container">
+            <a href="#" class="view-case-btn">Coming Soon</a>
+        </div>
+    </div>
+
+    <!-- Placeholder Blog Card 5 -->
+    <div class="case-study-flex">
+        <div class="case-thumbnail-container">
+            <img src="assets/placeholder.png" alt="Blog Placeholder" class="case-thumbnail">
+        </div>
+
+        <div class="case-details">
+            <h2>Blog Post Title Placeholder 5</h2>
+            <p class="blog-description">More articles and deep dives coming soon. Stay tuned!</p>
+        </div>
+
+        <div class="case-button-container">
+            <a href="#" class="view-case-btn">Coming Soon</a>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Nargis Jahan. All rights reserved.</p>
-    </footer>
+        <p>© 2025 Nargis Jahan. Built with ❤️ and a touch of creativity.</p>
+        <p><strong>Best viewed on desktop using Chrome.</strong></p>
+      </footer>
+      
+
 </body>
 </html>
+

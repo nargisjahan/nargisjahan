@@ -1,80 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nargis Jahan | Product Manager & Storyteller</title>
     <style>
-        /* Basic Reset */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f9f9f9;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
-
-        /* Navbar */
         nav {
             background-color: #333;
             padding: 15px;
             text-align: center;
         }
-
         nav a {
-            color: #f0f0f0;
+            color: #f9f9f9;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
-
         nav a:hover {
             color: #007BFF;
         }
-
-        /* Main Content */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 50px auto;
-            text-align: center;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-
         h1 {
-            color: #222;
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
-
-        p, li {
-            color: #555;
+        h2 {
+            font-size: 1.8em;
+            color: #007BFF;
+        }
+        p {
+            font-size: 1.2em;
             line-height: 1.6;
         }
-
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
-
-        li::before {
-            content: "• ";
-            color: #007BFF;
-            font-weight: bold;
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
         }
-
-        /* Footer */
+        li strong {
+            color: #007BFF;
+        }
         footer {
             text-align: center;
             padding: 20px;
             color: #555;
             background-color: #f1f1f1;
             border-top: 1px solid #ddd;
-            margin-top: 40px;
+            margin-top: 50px;
+        }
+        .cta {
+            margin: 30px 0;
+        }
+        .cta a {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="case-studies.html">Case Studies</a>
@@ -83,18 +91,28 @@
     </nav>
 
     <div class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Nargis Jahan, a passionate individual exploring creativity and innovation. Here, you'll find:</p>
+        <h1>👋 Hi, I'm Nargis Jahan</h1>
+        <h2>Product Manager | Storyteller | Creator</h2>
+        <p>
+            I’m passionate about building impactful products, solving real-world problems, and telling stories that inspire. 
+            This portfolio is a reflection of my journey as a creator and problem solver.
+        </p>
+
         <ul>
-            <li><strong>Case Studies:</strong> In-depth looks at projects I've worked on.</li>
-            <li><strong>Blog:</strong> My thoughts, experiences, and insights.</li>
-            <li><strong>Poetry:</strong> A collection of my poetic expressions.</li>
+            <li><strong>📁 Case Studies:</strong> Deep dives into products I've worked on, complete with strategies and learnings.</li>
+            <li><strong>📝 Blog:</strong> Insights on product management, storytelling, and life lessons along the way.</li>
+            <li><strong>🎙️ Poetry:</strong> A window into my thoughts and emotions, captured in verses.</li>
         </ul>
-        <p>Feel free to explore and connect with me!</p>
+
+        <div class="cta">
+            <a href="case-studies.html">Explore My Work</a>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Nargis Jahan. All rights reserved.</p>
+        &copy; 2025 Nargis Jahan. Built with ❤️ and a touch of creativity.
     </footer>
+
 </body>
 </html>
+

@@ -155,3 +155,121 @@ p {
         text-align: center; /* Center-align on mobile */
     }
 }
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #f0f0f0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Blog Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+/* Blog Main Container with 15% Margins */
+.blog-container {
+    margin: 0 auto;   /* Centers the container horizontally */
+    width: 70%;      /* Leaves 15% margin on both left & right sides */
+}
+/* Blog Title */
+.blog-container h1 {
+    text-align: center;  /* Centers the blog title */
+    margin-top: 30px;    /* Adds space above the title */
+}
+
+/* Published Date */
+.blog-container p strong {
+    display: block;      /* Makes "Published on:" appear on its own line */
+    margin-top: 10px;    /* Adds space above it */
+    font-size: 1rem;     /* Ensures consistent sizing */
+}
+
+/* Blog Content */
+.blog-container p {
+    text-align: justify;  /* Aligns text on both left & right edges */
+    margin-bottom: 16px;  /* Adds space between paragraphs */
+}
+
+.blog-container em {
+    font-style: italic;   /* Styles emphasized text */
+}
+
+.blog-container strong {
+    font-weight: bold;    /* Makes bold text stand out */
+}
+
+
+/* Typography */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f2f2f2; /* Light gray background */
+    text-align: center; /* Center the text */
+    padding: 15px 0; /* Consistent padding */
+    font-size: 14px; /* Smaller font for footer */
+    color: #555; /* Dark gray text */
+    border-top: 1px solid #ddd; /* Subtle border */
+    margin-top: 20px; /* Space from content */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Heart Emoji Styling */
+footer .heart {
+    color: red;
+}
+
+/* Footer Paragraphs */
+footer p {
+    margin: 5px 0; /* Consistent spacing between lines */
+    text-align: center; /* Ensure all paragraphs are centered */
+}
+
+
+
+
