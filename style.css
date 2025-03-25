@@ -270,6 +270,10 @@ footer p {
     text-align: center; /* Ensure all paragraphs are centered */
 }
 
+.blog-container p {
+    text-align: center;  /* Centers the poem text */
+    margin-bottom: 16px; /* Maintain good spacing */
+}
 
 
 
